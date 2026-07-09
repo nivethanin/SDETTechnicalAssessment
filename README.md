@@ -103,10 +103,16 @@ pytest -m performance -v
 	- content/value checks
 	- query/filter behavior
 	- negative path for invalid IDs
+	- lightweight response-time and small concurrent burst checks
 	- non-persistent CRUD-style behavior for `posts`
+
+Note: the performance coverage in this project is intentionally lightweight.
+It validates basic response-time thresholds and a small concurrent request burst,
+but it is not intended to be a full load or stress test against a public shared API.
 
 ## TODOS
 
+- Cross-resource consistency tests (e.g. put/patch then get)
 - Mutation negative tests
 - Thorough schema validation via JSON schema library
 - Data-driven full boundary matrix across all query parameters
