@@ -1,0 +1,14 @@
+.pytest_cache/
+.venv/
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+
+
+# IDE/editor settings
+.vscode/
+.idea/
+
+# macOS
+.DS_Store
