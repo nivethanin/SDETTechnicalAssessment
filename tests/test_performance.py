@@ -61,4 +61,3 @@ def test_posts_endpoint_handles_small_parallel_request_burst(api_client):
     assert average_duration_seconds < max_average_duration_seconds, (
         f"Average request time was {average_duration_seconds:.3f}s, expected < {max_average_duration_seconds:.3f}s"
     )
-
